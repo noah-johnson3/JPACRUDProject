@@ -46,6 +46,10 @@ class PoeCharacterTest {
 	void test() {
 		assertNotNull(poeCharacter);
 		assertEquals("Necromancer", poeCharacter.getCharacterClass());
+		assertEquals("The Baron", poeCharacter.getHelmet());
+		assertEquals("Lifesprig", poeCharacter.getWeapon());
+		assertEquals("Kaom's Heart", poeCharacter.getBodyArmor());
+		assertEquals("Seven-league step", poeCharacter.getBoots());
 	}
 
 }
