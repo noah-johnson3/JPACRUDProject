@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+	background-image: url(https://i.imgur.com/AzO81pql.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: relative;
+	margin: 0;
+	padding-right: 3%;
+	padding-top: 4%;
+	padding-bottom: 5%;
+	padding-left: 1%;
+	color: white;
+}
+
+.parent {
+	color: white;
+	text-align: center;
+}
+.child-one {
+	position: relative;
+}
+.child-two{
+	position: relative;
+	right: 500px;
+	top: 550px;
+} 
+.child-three{
+	position: relative;
+	left: 500px;
+	top: 520px;
+}
+a {
+	color: white;
+}

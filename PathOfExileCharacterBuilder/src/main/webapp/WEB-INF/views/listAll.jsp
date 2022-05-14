@@ -23,7 +23,7 @@
 			</tbody>
 		</table>
 		<form action="update.do" method="GET">
-			Character id to update: <input type="text" name="id" /> <input
+			Character ID: <input type="text" name="id" /> <input
 				type="submit" value="Edit Character" /> <input type="submit" value="Delete Character" formaction="delete.do" />
 				
 <jsp:include page="../bootstrapFoot.jsp" />

@@ -14,9 +14,9 @@
 <form action="updateCharacterDB.do" method="POST">
 	<input type="text" name="id" value="${character.id}" hidden="true">
 
-	Please select your character's name<input type="text" name="name" /><br>
-	<br> <label for="characterClass">Please select a Class:</label> <select
-		name="characterClass" id="characterClass">
+	Please select your character's name<input type="text" name="characterName"/><br><br>
+
+	<label for="class">Please select a Class:</label> <select name="class" id="class">
 		<option value="Necromancer">Necromancer</option>
 		<option value="Pathfinder">Pathfinder</option>
 		<option value="Berserker">Berserker</option>
@@ -24,7 +24,7 @@
 		<option value="Trickster">Trickster</option>
 		<option value="Inquisitor">Inquisitor</option>
 		<option value="Ascendant">Ascendant</option>
-	</select><br>
+	</select><br><br>
 	<label for="helmet">Please select a Helmet</label>
 		<select name="helmet" id="hemlet">
 			<option value="The Baron">The Baron</option>
@@ -65,10 +65,8 @@
 		<input type="submit" value="Update Character">
 
 </form>
-
-
-
 	<a href="home.do">Return to home</a>
-<jsp:include page="../bootstrapFoot.jsp" />
+	<jsp:include page="../bootstrapFoot.jsp" />
+
 </body>
 </html> 

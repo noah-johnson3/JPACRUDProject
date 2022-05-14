@@ -9,23 +9,31 @@
 <jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
-	<h1>Welcome to the Path of Exile Character Builder!</h1>
+<div class="parent">
+	Welcome to the Path of Exile Character Builder!
 
 	<main class="container-fluid">
-
+	
 		<form action="showClass.do" method="GET">
+		<div class="child-one child">
 			Character Id: <input type="text" name="id" /> <input type="submit"
-				value="Show Class" />
+				value="Show Character" />
+		</div>
 
 		</form>
 		<form action="create.do" method="GET">
-			<a href="create.do">Create New Character</a>
+				<div class="child-two child">
+					<input type="submit" value="Create new Character" />
+				</div>
 
-		</form>
+			</form>
 		<form action="list.do" method="GET">
-			<a href="list.do" method="GET">Show all Characters</a>
+		<div class="child-three child">
+			<input type="submit" value="Show all Characters" />
+		</div>
 
 		</form>
+</div>
 
 	</main>
 </body>
