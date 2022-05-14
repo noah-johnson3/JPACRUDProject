@@ -23,13 +23,22 @@ body {
 .child-two{
 	position: relative;
 	right: 500px;
-	top: 550px;
+	top: 250px;
 } 
 .child-three{
 	position: relative;
 	left: 500px;
-	top: 520px;
+	top: 220px;
 }
+.video{
+	position: relative;
+	top: 100px;
+}
+.videotext{
+	position: relative;
+	top: 100px;
+}
+	
 a {
 	color: white;
 }
