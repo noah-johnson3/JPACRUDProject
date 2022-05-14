@@ -1,5 +1,7 @@
 package com.skilldistillery.poe.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,33 +21,57 @@ public class PoeCharacterController {
 
 	@RequestMapping(path = { "/", "home.do" })
 	public String index(Model model) {
-		model.addAttribute("DEBUG", poeDao.findById(1));
+//		model.addAttribute("DEBUG", poeDao.findById(1));
+		List<PoeCharacter> charList = poeDao.poeCharacters();
+		model.addAttribute("charList", charList);
 
 		return "index";
 	}
 
 	@RequestMapping("showClass.do")
-	public String showCharacter(@RequestParam Integer characterId, Model model) {
-		PoeCharacter character = poeDao.findById(characterId);
+	public String showCharacter(@RequestParam("id") int id, Model model) {
+		PoeCharacter character = poeDao.findById(id);
 		model.addAttribute("character", character);
 		return "views/show";
 	}
-
+	
 	@RequestMapping(path = "createCharacter.do", method = RequestMethod.POST)
-	public String createCharacter(String name, String characterClass, String helmet, String weapon, String bodyArmor,
-			String boots, String gloves, String belt, RedirectAttributes redir) {
-
-		PoeCharacter character = new PoeCharacter(name, characterClass, helmet, weapon, bodyArmor, boots, gloves, belt);
+	public String createCharacter(PoeCharacter character, RedirectAttributes redir) {
 
 		character = poeDao.createCharacter(character);
 
 		redir.addFlashAttribute("character", character);
-		return "redirect:showClass.do";
+		return "redirect:showCharacterRedirect.do";
 	}
-
-	@RequestMapping(path = "createCharacter.do", method = RequestMethod.GET)
+	// Finished, no touchy
+	@RequestMapping(path = "create.do", method = RequestMethod.GET)
 	public String createCharacterGet() {
-
+		
 		return "views/createCharacter";
 	}
+	@RequestMapping(path= "showCharacterRedirect.do")
+	public String showCharacterRedirect() {
+		
+		return "views/show";
+	}
+	@RequestMapping(path="list.do", method = RequestMethod.GET)
+	public String showAllCharacters(Model model) {
+		List<PoeCharacter> charList = poeDao.poeCharacters();
+		model.addAttribute("charList", charList);
+		
+		return "views/listAll";
+	}
+	@RequestMapping(path="update.do", method = RequestMethod.GET)
+	public String updateCharacterRedirecet(int id, Model model) {
+		PoeCharacter character = poeDao.findById(id);
+		model.addAttribute("character", character);
+		return "views/updateCharacter";
+	}
+	@RequestMapping(path = "updateCharacterDB.do", method = RequestMethod.POST)
+	public String updateCharacter(PoeCharacter character, Integer id, Model model) {
+		poeDao.updateCharacter(character);
+		
+		return "views/show";
+	}
+	
 }

@@ -9,6 +9,6 @@ public interface PoeCharacterDAO {
 	PoeCharacter findById(int id);
 	List<PoeCharacter> poeCharacters();
 	PoeCharacter createCharacter(PoeCharacter character);
-		
+	PoeCharacter updateCharacter(PoeCharacter character);	
 
 }

@@ -18,6 +18,6 @@
 	<h2>${character.gloves}</h2>
 	<h2>${character.belt}</h2>
 	</div>
-
+	<a href="home.do">Return to home</a>
 </body>
 </html>

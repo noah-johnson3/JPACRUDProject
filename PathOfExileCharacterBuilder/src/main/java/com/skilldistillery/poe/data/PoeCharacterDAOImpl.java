@@ -3,8 +3,6 @@ package com.skilldistillery.poe.data;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
@@ -37,9 +35,21 @@ public class PoeCharacterDAOImpl implements PoeCharacterDAO {
 	public PoeCharacter createCharacter(PoeCharacter character) {
 		em.persist(character);
 		
-		
-		
 		return character;
 	}
-
+	@Override
+	public PoeCharacter updateCharacter(PoeCharacter character) {
+		PoeCharacter managedCharacter = em.find(PoeCharacter.class, character.getId());
+		managedCharacter.setName(character.getName());
+		managedCharacter.setBelt(character.getBelt());
+		managedCharacter.setCharacterClass(character.getCharacterClass());
+		managedCharacter.setHelmet(character.getHelmet());
+		managedCharacter.setWeapon(character.getWeapon());
+		managedCharacter.setBodyArmor(character.getBodyArmor());
+		managedCharacter.setBoots(character.getBoots());
+		managedCharacter.setGloves(character.getGloves());
+		managedCharacter.setBelt(character.getBelt());
+		
+		return managedCharacter;
+	}
 }
