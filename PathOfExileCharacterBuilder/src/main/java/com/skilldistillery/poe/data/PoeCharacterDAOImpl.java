@@ -52,4 +52,16 @@ public class PoeCharacterDAOImpl implements PoeCharacterDAO {
 		
 		return managedCharacter;
 	}
+	public boolean deleteCharacter(int id) {
+		
+		boolean deleted =false;
+		
+		PoeCharacter deletedCharacter = em.find(PoeCharacter.class, id);
+		if(deletedCharacter != null) {
+			
+			em.remove(deletedCharacter);
+			deleted = !em.contains(deletedCharacter);
+		} 
+		return deleted;
+	}
 }

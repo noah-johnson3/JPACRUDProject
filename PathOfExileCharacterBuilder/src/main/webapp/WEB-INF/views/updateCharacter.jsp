@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Update a Character</title>
+<jsp:include page="../bootstrapHead.jsp" />
 </head>
 <body>
 <h3>Update a character:</h3>
@@ -68,7 +69,6 @@
 
 
 	<a href="home.do">Return to home</a>
-
-
+<jsp:include page="../bootstrapFoot.jsp" />
 </body>
 </html> 

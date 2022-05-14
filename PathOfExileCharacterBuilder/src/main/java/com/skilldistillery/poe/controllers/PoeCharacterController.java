@@ -73,5 +73,11 @@ public class PoeCharacterController {
 		
 		return "views/show";
 	}
+	@RequestMapping(path = "delete.do", method = RequestMethod.GET)
+	public String deleteCharacter(int id, Model model) {
+		poeDao.deleteCharacter(id);
+		
+		return "views/deleteCharacter";
+	}
 	
 }

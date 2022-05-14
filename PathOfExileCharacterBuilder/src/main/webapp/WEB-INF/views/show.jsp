@@ -3,21 +3,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<jsp:include page="../bootstrapHead.jsp" />
 <meta charset="UTF-8">
 <title>Class Details for Character id: ${character.id}</title>
 
 </head>
 <body>
 	<div>
-	<h1>${character.name}</h1> 
-	<h1>${character.characterClass }</h1>
-	<h2>${character.helmet}</h2>
-	<h2>${character.weapon}</h2>
-	<h2>${character.bodyArmor}</h2> 
-	<h2>${character.boots}</h2>
-	<h2>${character.gloves}</h2>
-	<h2>${character.belt}</h2>
+		<h1>${character.name}</h1>
+		<h1>${character.characterClass }</h1>
+		<h2>${character.helmet}</h2>
+		<h2>${character.weapon}</h2>
+		<h2>${character.bodyArmor}</h2>
+		<h2>${character.boots}</h2>
+		<h2>${character.gloves}</h2>
+		<h2>${character.belt}</h2>
 	</div>
 	<a href="home.do">Return to home</a>
+	
+<jsp:include page="../bootstrapFoot.jsp" />
 </body>
 </html>

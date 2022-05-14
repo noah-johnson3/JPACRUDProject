@@ -10,5 +10,6 @@ public interface PoeCharacterDAO {
 	List<PoeCharacter> poeCharacters();
 	PoeCharacter createCharacter(PoeCharacter character);
 	PoeCharacter updateCharacter(PoeCharacter character);	
+	boolean deleteCharacter(int id);
 
 }
