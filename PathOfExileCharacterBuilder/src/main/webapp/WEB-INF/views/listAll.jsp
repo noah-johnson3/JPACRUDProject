@@ -14,6 +14,10 @@
 		<form action="show.do" method="GET"></form>
 		<table>
 			<tbody>
+			<tr>
+			<th>ID</th>
+			<th>Character Name</th>
+			</tr>
 				<c:forEach var="character" items="${charList}">
 					<tr>
 						<td>${character.id}</td>

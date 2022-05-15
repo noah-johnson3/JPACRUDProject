@@ -85,5 +85,10 @@ public class PoeCharacterController {
 
 		return "views/deleteCharacter";
 	}
+	@RequestMapping(path = "gallery.do", method = RequestMethod.GET)
+	public String galleryView(Model model) {
+		
+		return "views/gallery";
+	}
 
 }

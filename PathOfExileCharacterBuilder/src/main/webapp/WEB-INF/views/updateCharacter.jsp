@@ -14,7 +14,7 @@
 <form action="updateCharacterDB.do" method="POST">
 	<input type="text" name="id" value="${character.id}" hidden="true">
 
-	Please select your character's name<input type="text" name="characterName"/><br><br>
+	Please select your character's name<input type="text" name="name"/><br><br>
 
 	<label for="class">Please select a Class:</label> <select name="class" id="class">
 		<option value="Necromancer">Necromancer</option>

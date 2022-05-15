@@ -13,8 +13,8 @@
 	<form action="createCharacter.do" method="POST">
 
 		Please select your character's name<input type="text" name="name" /><br>
-		<br> <label for="characterClass">Please select a Class:</label> <select
-			name="characterClass" id="characterClass">
+		<br> <label for="class">Please select a Class:</label> <select
+			name="class" id="class">
 			<option value="Necromancer">Necromancer</option>
 			<option value="Pathfinder">Pathfinder</option>
 			<option value="Berserker">Berserker</option>

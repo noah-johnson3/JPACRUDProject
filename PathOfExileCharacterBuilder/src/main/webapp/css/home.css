@@ -1,44 +1,191 @@
 @charset "UTF-8";
 
 body {
-	background-image: url(https://i.imgur.com/AzO81pql.jpg);
+	background: url(https://i.imgur.com/AzO81pql.jpg) no-repeat center fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: relative;
-	margin: 0;
-	padding-right: 3%;
-	padding-top: 4%;
-	padding-bottom: 5%;
-	padding-left: 1%;
 	color: white;
+	overflow-x: hidden;
+}
+table, td, th {
+  border: 1px solid;
+}
+.home {
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
 }
 
 .parent {
 	color: white;
 	text-align: center;
 }
+
 .child-one {
 	position: relative;
 }
-.child-two{
-	position: relative;
-	right: 500px;
-	top: 250px;
-} 
-.child-three{
-	position: relative;
-	left: 500px;
-	top: 220px;
+
+.create {
+	text-align: left;
 }
-.video{
-	position: relative;
-	top: 100px;
+
+.show {
+	text-align: right;
 }
-.videotext{
-	position: relative;
-	top: 100px;
+
+.gallery {
+	text-align: center;
 }
-	
+
+
 a {
 	color: white;
 }
+
+.necromancer {
+	background-image: url(https://pbs.twimg.com/media/DvrprL3XcAAZf_p.jpg);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+}
+
+.pathfinder {
+	background-image:
+		url(https://www.gamersdecide.com/sites/default/files/styles/news_images/public/pathfinder_ascendancy_class.png);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 220px;
+	bottom: 150px
+}
+
+.berserker {
+	background-image: url(berserker.png);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 440px;
+	bottom: 300px;
+	background-size: cover;
+}
+
+.champion {
+	background-image: url(champion.png);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 660px;
+	bottom: 450px;
+	background-size: cover;
+}
+
+.trickster {
+	background-image:
+		url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkcWPeWeUX2FoBnPl6NOHTpVqNK0Cg0jmfbA&usqp=CAU);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 880px;
+	bottom: 600px;
+	width: 200px;
+}
+
+.inquisitor {
+	background-image: url(inquisitor.png);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 1100px;
+	bottom: 750px;
+}
+
+.helmets {
+	position: relative;
+	bottom: 750px;
+}
+
+.thebaron {
+	background-image: url(thebaron.png);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	bottom: 750px;
+}
+
+.goldrim {
+	background-image: url(goldrim.png);
+	background-size: cover;
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 220px;
+	bottom: 900px;
+}
+
+.thefledgling {
+	background-image: url(fledgling.png);
+	width: 200px;
+	height: 150px;
+	border: 5px solid #555;
+	position: relative;
+	left: 440px;
+	bottom: 1050px;
+}
+
+.wepaons {
+	position: relative;
+	bottom: 1050px;
+}
+
+.lifesprig {
+	background-image: url(lifesprig.png);
+	background-repeat: no-repeat;
+	width: 156px;
+	height: 200px;
+	border: 5px solid #555;
+	position: relative;
+	bottom: 1050px;
+}
+
+.onigoroshi {
+	background-image:
+		url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_VfDcWvPGwdflY2HGZdKNkhenSIQ7kAz_Q&usqp=CAU);
+	background-repeat: no-repeat;
+	width: 156px;
+	height: 200px;
+	border: 5px solid #555;
+	position: relative;
+	left: 176px;
+	bottom: 1250px;
+}
+
+.pledgeofhands {
+	background-image: url(pledge.png);
+	background-repeat: no-repeat;
+	width: 180px;
+	height: 312px;
+	border: 5px solid #555;
+	position: relative;
+	left: 352px;
+	bottom: 1450px;
+}
+
+.bodyarmor {
+	position: relative;
+	bottom: 1362px;
+}
+
