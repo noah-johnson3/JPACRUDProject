@@ -13,11 +13,13 @@ Hello! Welcome to my first solo full-stack application. This is based on a game 
 ## Technologies Used
 * Java
 * Spring Boot
+* Spring MVC
 * MySQL Workbench
+* MySQL JSP
 * CSS
 * HTML
-* JavaScript
-
+* JPA
+* Terminal
 
 ## How to use
 When you first load up the page you will see the home screen. There will be a short video there, I encourage you to watch it. On the top of the page you will have a field to enter a character ID. I have hard coded 8 characters for you to display Character IDs: 1-8. I did NOT setup a fail page so you MUST enter a character if you hit "show character" without entering an ID the site will break. From there you you will have a link to go back to the home screen. If you choose to view the gallery which I highly recommend you will see some photos from the game. You can create a new character and enter all the fields I have provided, I hardcoded default values for all of these. There will be another home button there as well. Finally in the Show all Characters page it will display and update characters as you add them to the database. The edit character and delete character both us the same Character ID: field and this does work. Simply type the ID and choose either update or delete to do this. 
