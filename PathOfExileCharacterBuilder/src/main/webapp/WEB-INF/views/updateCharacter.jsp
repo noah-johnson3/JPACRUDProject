@@ -65,7 +65,9 @@
 		<input type="submit" value="Update Character">
 
 </form>
-	<a href="home.do">Return to home</a>
+	<form action="home.do" method="GET">
+	<input type="submit" value="Home" />
+	</form>
 	<jsp:include page="../bootstrapFoot.jsp" />
 
 </body>
