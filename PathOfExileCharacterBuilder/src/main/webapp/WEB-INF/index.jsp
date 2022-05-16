@@ -19,7 +19,7 @@
 					Character Id: <input type="text" name="id" /> <input type="submit"
 						value="Show Character" />
 				</div>
-				<div class="videotext child">What is Path of Exile? Click</div>
+				<div class="videotext child">What is Path of Exile?</div>
 				<div class="video child">
 					<iframe width="560" height="315"
 						src="https://www.youtube.com/embed/OlE4f3nx_KE"
